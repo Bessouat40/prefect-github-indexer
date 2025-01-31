@@ -19,3 +19,5 @@ python src/github_scrapper.py
 ```bash
 python -m prefect server start
 ```
+
+Access dashboard [here](http://localhost:4200/dashboard).

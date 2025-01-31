@@ -47,7 +47,7 @@ def update_vector_store(repos: list[str], persist_directory: str, collection_nam
 if __name__ == "__main__":
     update_vector_store.serve(
         name="github-vector-store-scheduler",
-        interval=timedelta(minutes=10),
+        cron="0 0 * * *", # Run daily at midnight
         parameters={
             "repos": repos,
             "persist_directory": persist_directory,

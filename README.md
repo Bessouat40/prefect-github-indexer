@@ -29,7 +29,8 @@ This repository’s main flow is defined in flows/github-scrapper.py. Here’s h
 3. Subflow: process_repo
    Called for each repo. Manages the end-to-end flow of cloning, indexing, and cleanup for that repository.
 4. Scheduling: The flow can be scheduled to run at midnight every day (cron="0 0 \* \* \*").
-   Prefect’s server and agent allow you to:
+
+Prefect’s server and agent allow you to:
 
 Server (UI & API): See your flow runs, logs, and manage deployments from a nice dashboard.
 Agent (Worker): Listens for scheduled or triggered flow runs and executes them (in Docker containers or other infrastructure).
